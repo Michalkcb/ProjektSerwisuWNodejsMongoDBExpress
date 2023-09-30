@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  form(method='post')
+    p 
+      label Login
+      input(type='text' name='login')
+    p 
+      label Hasło
+      input(type='password' name='password')
+    p 
+      input(type='submit' value='Zaloguj')
+    

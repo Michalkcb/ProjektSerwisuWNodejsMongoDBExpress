@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  form(method='get')
+    input(type='text' value=search name='search')
+    input(type='submit' value='Szukaj')
+
+  each item in data 
+    article
+      h1(class='title')=item.title
+      p(class='date')=item.created
+      p=item.description
